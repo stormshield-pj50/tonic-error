@@ -8,16 +8,16 @@ publish = false
 
 [dependencies]
 anyhow = "1.0"
-prost = "0.10"
+prost = "0.12"
 serde = {version = "1.0", features = ["derive"]}
 serde_json = "1.0"
 thiserror = "1.0"
-tonic = "0.7"
+tonic = "0.11"
 tonic-error = {version = "0.3.0", path = ".." }
 tokio = { version = "1.0", features = ["macros", "rt-multi-thread"] }
 
 [build-dependencies]
-tonic-build = "0.7"
+tonic-build = "0.11"
 
 [[bin]]
 name = "client"
